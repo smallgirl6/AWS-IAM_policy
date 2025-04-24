@@ -15,7 +15,7 @@ fi
 echo "ポリシーJSONをダウンロード"
 
 # 各ポリシーのJSONをダウンロードして保存
-while read -r arn; do
+while IFS= read -r arn || [ -n "$arn" ]; do
   if [ -n "$arn" ]; then
     version=$(aws iam get-policy --policy-arn "$arn" --query 'Policy.DefaultVersionId' --output text 2>/dev/null)
     if [ -z "$version" ]; then
