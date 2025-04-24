@@ -1,0 +1,4 @@
+arn:aws:iam::XXXXXXXXXXXX:policy/policy1
+arn:aws:iam::XXXXXXXXXXXX:policy/policy2
+arn:aws:iam::XXXXXXXXXXXX:policy/policy3
+arn:aws:iam::XXXXXXXXXXXX:policy/policy4
